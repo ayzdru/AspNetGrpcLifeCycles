@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "AspNetGrpc.V1.BidirectionalStreaming";
+
+package BidirectionalStreaming;
+
+service Message {
+  rpc SayHello (stream MessageRequest) returns (stream MessageResponse);
+}
+
+message MessageRequest {
+  string message = 1;
+}
+
+message MessageResponse {
+  string message = 1;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "AspNetGrpc.V1.ServerStreaming";
+
+package Countdown;
+
+service Countdown {
+  rpc Print (CountdownRequest) returns (stream CountdownResponse);
+}
+
+message CountdownRequest {
+  int32 seconds = 1;
+}
+
+message CountdownResponse {
+  int32 message = 1;
+}

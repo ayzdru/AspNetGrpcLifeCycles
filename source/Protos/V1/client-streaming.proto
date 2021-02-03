@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "AspNetGrpc.V1.ClientStreaming";
+
+package Sum;
+
+service Sum {
+  rpc Increase (stream SumRequest) returns (SumResponse);
+}
+
+message SumRequest {
+  int32 number = 1;
+}
+
+message SumResponse {
+  int64 total = 1;
+}
