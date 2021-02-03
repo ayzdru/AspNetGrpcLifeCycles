@@ -1,1 +1,1 @@
-# ASP.NET gRPC Life Cycles (Unary, Server streaming, Client streaming, Bidirectional streamin)
+# ASP.NET gRPC Life Cycles (Unary, Server streaming, Client streaming, Bidirectional streaming)
