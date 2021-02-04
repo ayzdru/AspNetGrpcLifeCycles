@@ -36,7 +36,6 @@ namespace AspNetGrpc.Server
 
             app.UseRouting();
             app.UseCors(AllowOriginPolicyName);
-            app.UseGrpcWeb();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>

@@ -10,6 +10,5 @@
 			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
 		</Protobuf>
 		<PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
-		<PackageReference Include="Grpc.AspNetCore.Web" Version="2.34.0" />
 	</ItemGroup>
 </Project>
